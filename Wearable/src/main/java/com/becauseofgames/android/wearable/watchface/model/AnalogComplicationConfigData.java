@@ -13,18 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.wearable.watchface.model;
+package com.becauseofgames.android.wearable.watchface.model;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.android.wearable.watchface.R;
-import com.example.android.wearable.watchface.config.AnalogComplicationConfigRecyclerViewAdapter;
-import com.example.android.wearable.watchface.config.ColorSelectionActivity;
-import com.example.android.wearable.watchface.config.AnalogComplicationConfigActivity;
-import com.example.android.wearable.watchface.watchface.AnalogComplicationWatchFaceService;
+import com.becauseofgames.android.wearable.watchface.R;
+import com.becauseofgames.android.wearable.watchface.config.AnalogComplicationConfigRecyclerViewAdapter;
+import com.becauseofgames.android.wearable.watchface.config.ColorSelectionActivity;
+import com.becauseofgames.android.wearable.watchface.config.AnalogComplicationConfigActivity;
+import com.becauseofgames.android.wearable.watchface.watchface.AnalogComplicationWatchFaceService;
 
 import java.util.ArrayList;
 

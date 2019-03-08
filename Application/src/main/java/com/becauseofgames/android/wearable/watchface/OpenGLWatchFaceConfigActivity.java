@@ -14,13 +14,15 @@
  * limitations under the License.
  */
 
-package com.example.android.wearable.watchface;
+package com.becauseofgames.android.wearable.watchface;
 
 import android.app.Activity;
 import android.content.ComponentName;
 import android.os.Bundle;
 import android.support.wearable.companion.WatchFaceCompanion;
 import android.widget.TextView;
+
+import com.becauseofgames.android.wearable.watchface.R;
 
 /**
  * The phone-side config activity for {@code OpenGLWatchFaceService}. The

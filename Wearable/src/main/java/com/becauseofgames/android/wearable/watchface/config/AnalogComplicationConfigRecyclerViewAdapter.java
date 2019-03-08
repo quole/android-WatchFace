@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.example.android.wearable.watchface.config;
+package com.becauseofgames.android.wearable.watchface.config;
 
-import static com.example.android.wearable.watchface.config.ColorSelectionActivity.EXTRA_SHARED_PREF;
+import static com.becauseofgames.android.wearable.watchface.config.ColorSelectionActivity.EXTRA_SHARED_PREF;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -45,14 +45,14 @@ import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.example.android.wearable.watchface.R;
-import com.example.android.wearable.watchface.model.AnalogComplicationConfigData.BackgroundComplicationConfigItem;
-import com.example.android.wearable.watchface.model.AnalogComplicationConfigData.ColorConfigItem;
-import com.example.android.wearable.watchface.model.AnalogComplicationConfigData.ConfigItemType;
-import com.example.android.wearable.watchface.model.AnalogComplicationConfigData.MoreOptionsConfigItem;
-import com.example.android.wearable.watchface.model.AnalogComplicationConfigData.PreviewAndComplicationsConfigItem;
-import com.example.android.wearable.watchface.model.AnalogComplicationConfigData.UnreadNotificationConfigItem;
-import com.example.android.wearable.watchface.watchface.AnalogComplicationWatchFaceService;
+import com.becauseofgames.android.wearable.watchface.R;
+import com.becauseofgames.android.wearable.watchface.model.AnalogComplicationConfigData.BackgroundComplicationConfigItem;
+import com.becauseofgames.android.wearable.watchface.model.AnalogComplicationConfigData.ColorConfigItem;
+import com.becauseofgames.android.wearable.watchface.model.AnalogComplicationConfigData.ConfigItemType;
+import com.becauseofgames.android.wearable.watchface.model.AnalogComplicationConfigData.MoreOptionsConfigItem;
+import com.becauseofgames.android.wearable.watchface.model.AnalogComplicationConfigData.PreviewAndComplicationsConfigItem;
+import com.becauseofgames.android.wearable.watchface.model.AnalogComplicationConfigData.UnreadNotificationConfigItem;
+import com.becauseofgames.android.wearable.watchface.watchface.AnalogComplicationWatchFaceService;
 
 import java.util.ArrayList;
 import java.util.concurrent.Executors;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.wearable.watchface.config;
+package com.becauseofgames.android.wearable.watchface.config;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -38,9 +38,9 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.wearable.DataMap;
 import com.google.android.gms.wearable.Wearable;
 
-import com.example.android.wearable.watchface.watchface.DigitalWatchFaceService;
-import com.example.android.wearable.watchface.util.DigitalWatchFaceUtil;
-import com.example.android.wearable.watchface.R;
+import com.becauseofgames.android.wearable.watchface.watchface.DigitalWatchFaceService;
+import com.becauseofgames.android.wearable.watchface.util.DigitalWatchFaceUtil;
+import com.becauseofgames.android.wearable.watchface.R;
 
 /**
  * The watch-side config activity for {@link DigitalWatchFaceService}, which allows for setting the

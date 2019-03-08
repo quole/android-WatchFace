@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.wearable.watchface.watchface;
+package com.becauseofgames.android.wearable.watchface.watchface;
 
 import android.content.res.Resources;
 import android.graphics.Canvas;
@@ -29,7 +29,7 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.WindowInsets;
 
-import com.example.android.wearable.watchface.R;
+import com.becauseofgames.android.wearable.watchface.R;
 
 /**
  * Demonstrates interactive watch face capabilities, i.e., touching the display and registering

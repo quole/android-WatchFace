@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.wearable.watchface.watchface;
+package com.becauseofgames.android.wearable.watchface.watchface;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -28,7 +28,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.SurfaceHolder;
 
-import com.example.android.wearable.watchface.util.Gles2ColoredTriangleList;
+import com.becauseofgames.android.wearable.watchface.util.Gles2ColoredTriangleList;
 
 import java.util.Calendar;
 import java.util.TimeZone;

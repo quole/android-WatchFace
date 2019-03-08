@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.wearable.watchface.config;
+package com.becauseofgames.android.wearable.watchface.config;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -26,8 +26,8 @@ import com.google.android.gms.wearable.MessageEvent;
 import com.google.android.gms.wearable.Wearable;
 import com.google.android.gms.wearable.WearableListenerService;
 
-import com.example.android.wearable.watchface.watchface.DigitalWatchFaceService;
-import com.example.android.wearable.watchface.util.DigitalWatchFaceUtil;
+import com.becauseofgames.android.wearable.watchface.watchface.DigitalWatchFaceService;
+import com.becauseofgames.android.wearable.watchface.util.DigitalWatchFaceUtil;
 
 import java.util.concurrent.TimeUnit;
 

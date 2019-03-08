@@ -14,7 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<manifest package="com.example.android.wearable.watchface"
+<manifest package="com.becauseofgames.android.wearable.watchface"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-feature android:name="android.hardware.type.watch"/>
@@ -41,7 +41,7 @@
             android:required="false"/>
 
         <service
-            android:name=".watchface.OpenGLWatchFaceService"
+            android:name="com.becauseofgames.android.wearable.watchface.watchface.OpenGLWatchFaceService"
             android:label="@string/opengl_name"
             android:permission="android.permission.BIND_WALLPAPER">
             <meta-data
@@ -55,7 +55,7 @@
                 android:resource="@drawable/preview_opengl_circular"/>
             <meta-data
                 android:name="com.google.android.wearable.watchface.companionConfigurationAction"
-                android:value="com.example.android.wearable.watchface.CONFIG_OPENGL"/>
+                android:value="com.becauseofgames.android.wearable.watchface.CONFIG_OPENGL"/>
 
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService"/>
@@ -64,7 +64,7 @@
             </intent-filter>
         </service>
         <service
-            android:name=".watchface.AnalogComplicationWatchFaceService"
+            android:name="com.becauseofgames.android.wearable.watchface.watchface.AnalogComplicationWatchFaceService"
             android:enabled="true"
             android:label="@string/analog_complication"
             android:permission="android.permission.BIND_WALLPAPER">
@@ -79,7 +79,7 @@
                 android:resource="@drawable/preview_analog_complication_circular"/>
             <meta-data
                 android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
-                android:value="com.example.android.wearable.watchface.CONFIG_COMPLICATION_SIMPLE"/>
+                android:value="com.becauseofgames.android.wearable.watchface.CONFIG_COMPLICATION_SIMPLE"/>
 
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService"/>
@@ -90,10 +90,10 @@
 
         <activity android:name="android.support.wearable.complications.ComplicationHelperActivity"/>
         <activity
-            android:name=".config.AnalogComplicationConfigActivity"
+            android:name="com.becauseofgames.android.wearable.watchface.config.AnalogComplicationConfigActivity"
             android:label="@string/analog_complication_config">
             <intent-filter>
-                <action android:name="com.example.android.wearable.watchface.CONFIG_COMPLICATION_SIMPLE"/>
+                <action android:name="com.becauseofgames.android.wearable.watchface.CONFIG_COMPLICATION_SIMPLE"/>
 
                 <category android:name="com.google.android.wearable.watchface.category.WEARABLE_CONFIGURATION"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -101,7 +101,7 @@
         </activity>
 
         <service
-            android:name=".watchface.InteractiveWatchFaceService"
+            android:name="com.becauseofgames.android.wearable.watchface.watchface.InteractiveWatchFaceService"
             android:label="@string/interactive_name"
             android:permission="android.permission.BIND_WALLPAPER">
             <meta-data
@@ -122,7 +122,7 @@
         </service>
 
         <service
-            android:name=".watchface.DigitalWatchFaceService"
+            android:name="com.becauseofgames.android.wearable.watchface.watchface.DigitalWatchFaceService"
             android:label="@string/digital_name"
             android:permission="android.permission.BIND_WALLPAPER">
             <meta-data
@@ -136,10 +136,10 @@
                 android:resource="@drawable/preview_digital_circular"/>
             <meta-data
                 android:name="com.google.android.wearable.watchface.companionConfigurationAction"
-                android:value="com.example.android.wearable.watchface.CONFIG_DIGITAL"/>
+                android:value="com.becauseofgames.android.wearable.watchface.CONFIG_DIGITAL"/>
             <meta-data
                 android:name="com.google.android.wearable.watchface.wearableConfigurationAction"
-                android:value="com.example.android.wearable.watchface.CONFIG_DIGITAL"/>
+                android:value="com.becauseofgames.android.wearable.watchface.CONFIG_DIGITAL"/>
 
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService"/>
@@ -155,17 +155,17 @@
         -->
 
         <activity
-            android:name=".config.DigitalWatchFaceWearableConfigActivity"
+            android:name="com.becauseofgames.android.wearable.watchface.config.DigitalWatchFaceWearableConfigActivity"
             android:label="@string/digital_config_name">
             <intent-filter>
-                <action android:name="com.example.android.wearable.watchface.CONFIG_DIGITAL"/>
+                <action android:name="com.becauseofgames.android.wearable.watchface.CONFIG_DIGITAL"/>
 
                 <category android:name="com.google.android.wearable.watchface.category.WEARABLE_CONFIGURATION"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
 
-        <service android:name=".config.DigitalWatchFaceConfigListenerService">
+        <service android:name="com.becauseofgames.android.wearable.watchface.config.DigitalWatchFaceConfigListenerService">
             <intent-filter>
                 <action android:name="com.google.android.gms.wearable.MESSAGE_RECEIVED"/>
 
@@ -177,7 +177,7 @@
         </service>
 
         <service
-            android:name=".provider.IncrementingNumberComplicationProviderService"
+            android:name="com.becauseofgames.android.wearable.watchface.provider.IncrementingNumberComplicationProviderService"
             android:icon="@drawable/icn_complications"
             android:label="@string/complications_provider_incrementing_number"
             android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER">
@@ -194,7 +194,7 @@
 
             In general, you want to manually trigger updates only when your complication data
             actually changes via ProviderUpdateRequester (check UpdateComplicationDataService.java
-            for an example).
+            for an becauseofgames).
 
             If you do decide to use UPDATE_PERIOD_SECONDS, set the interval in the order of minutes.
             A good value might be 600 seconds (10 minutes) if you need updates pulled often.
@@ -206,8 +206,8 @@
                 android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
                 android:value="0"/>
         </service>
-        <receiver android:name=".provider.ComplicationToggleReceiver"/>
+        <receiver android:name="com.becauseofgames.android.wearable.watchface.provider.ComplicationToggleReceiver"/>
 
-        <activity android:name=".config.ColorSelectionActivity"/>
+        <activity android:name="com.becauseofgames.android.wearable.watchface.config.ColorSelectionActivity"/>
     </application>
 </manifest>
